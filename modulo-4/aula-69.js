@@ -1,5 +1,5 @@
-// argumentos que sustenta todos argumentos enviados
-function funcao(a, b =2, c = 4) {
-    console.log(a + b + c);
- }
-funcao(2, 10);
+const conta  = (...args) => { 
+    console.log(args);
+};
+
+conta('+', 0, 20, 30, 40, 50)
