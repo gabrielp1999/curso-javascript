@@ -5,8 +5,8 @@ function falaOi() {
 }
 
 
-    // First-class objects (Objetos de primeira classe)
-    // Function expression
+// First-class objects (Objetos de primeira classe)
+// Function expression
 const souUmDado = function() {
     console.log('sou um dado');
 }
