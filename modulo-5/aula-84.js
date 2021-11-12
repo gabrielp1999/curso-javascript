@@ -1,4 +1,6 @@
-// Filter => Sempre retorna um array, com a mesma quantidade de elementos ou menos
+// Filter => Sempre retorna um array, com a mesma quantidade de elementos ou menos 
+// ele tem a função de filtrar o conteúdo de uma array.
+
 
 // Retotne os números maiores do que 10
 //                0, 1, 2,  3,  4 ......
