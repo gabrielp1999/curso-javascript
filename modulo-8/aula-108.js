@@ -4,6 +4,9 @@ function rand (min, max) {
     return Math.floor(Math.random () * (max - min) + min);
 }
 
+// promise é uma função que vai da uma promessa pode demorar um tempo,
+// mais vai da um retorno positivo ou negativo
+
 function esperaAi (msg, tempo) {
     return new Promise((resolve, reject) => {
         if(typeof msg !== 'string') reject (false);
