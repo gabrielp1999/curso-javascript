@@ -30,39 +30,54 @@
 //     let nome = elemento.nome + " " + elemento.idade;
 //     return nome;
 //   };
-const usuarios = [
-    {
-      nome: "Felipe",
-      idade: 30,
-          altura: 160
-    }, 
-    {
-      nome: "Gabriel",
-      idade: 22,
-          altura: 180
-    },
-    {
-      nome: "Crislaine",
-      idade: 29,
-          altura: 150,
-    },
-    {
-        nome: "Ana Luiza",
-        idade: 16,
-          altura: 170
-    }
-  ];
+
+// const usuarios = [
+//     {
+//       nome: "Felipe",
+//       idade: 30,
+//           altura: 160
+//     }, 
+//     {
+//       nome: "Gabriel",
+//       idade: 22,
+//           altura: 180
+//     },
+//     {
+//       nome: "Crislaine",
+//       idade: 29,
+//           altura: 150,
+//     },
+//     {
+//         nome: "Ana Luiza",
+//         idade: 16,
+//           altura: 170
+//     }
+//   ];
 
   
- let usuario = usuarios.map(mudarAltura);
+//  let usuario = usuarios.map(mudarAltura);
+//  console.log(usuario);
+
+// function mudarAltura(elemento) {
+//     let altura = elemento.altura / 100;
+//     return {
+//         nome: elemento.nome,
+//         idade: elemento.idade,
+//         altura: altura
+//     };
+// };
+
+const nomesIdades = ["Felipe 30", "Gabriel 22", "Crislaine 29", "Ana 16"];
+
+ let usuario = nomesIdades.map(pessoas);
  console.log(usuario);
 
-function mudarAltura(elemento) {
-    let altura = elemento.altura / 100;
+function pessoas(elemento) {
+    let pessoa = elemento.split(" ");
+
     return {
-        nome: elemento.nome,
-        idade: elemento.idade,
-        altura: altura
+        nome:pessoa[0],
+        idade:pessoa[1]
     };
 };
 
