@@ -1,2 +1,2 @@
 # Curso de JavaScript
-## Repositorio de aprendizagem
+## Repositorio de aprendizagem..
