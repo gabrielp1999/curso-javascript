@@ -1,0 +1,19 @@
+.main {
+  background-color:lightsteelblue;
+  padding: 3rem;
+  margin: 5rem auto;
+  max-width: 54rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1rem  rgba(0, 0, 0, 1);
+}
+
+.main h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*
+input{
+  background-color: gainsboro;
+  margin: 0 1rem 0 0;
+} */
