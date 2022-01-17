@@ -1,5 +1,5 @@
 .main {
-  background-color:lightsteelblue;
+  background-color:white;
   padding: 3rem;
   margin: 5rem auto;
   max-width: 34rem;
@@ -19,19 +19,58 @@
   justify-content: center;
 }
 
-.form input {
+.form input[type="text"] {
   font-size: 1.5rem;
   min-width: 80%;
   padding: 0 1rem;
   border: 0.1rem solid #ccc;
 }
 
-.form button {
+.form button[type="submit"] {
   border: none;
   height: 1.9rem;
   width: 1.9rem;
-  background-color: #f04c64;
+  background-color: darkgrey;
   color: #fff;
   margin: 0 0 0 0.5rem;
 }
 
+.tarefas {
+  margin-top: 1.5rem;
+}
+
+.tarefas li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  transition: all 400ms;
+}
+
+.tarefas li:hover {
+  background-color: darkgrey;
+}
+
+.tarefas li .edit {
+  margin-right: 0.4rem;
+  color: #51c5de;
+}
+
+.tarefas li .delete {
+  margin-right: 0.4rem;
+  color: #f04c64;
+}
+
+.tarefas li:hover .edit {
+  color: black;
+}
+
+.tarefas li:hover .delete {
+  color: black;
+}
+
+.tarefas li .edit,
+.tarefas li .delete {
+  cursor: pointer;
+  transition: all 400ms;
+}
