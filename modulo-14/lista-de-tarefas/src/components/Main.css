@@ -1,4 +1,3 @@
-
 .main {
   background-color:white;
   padding: 2rem 1rem;
@@ -13,76 +12,6 @@
   text-align: center;
 }
 
-.form {
-  margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.form input[type="text"] {
-  font-size: 1.5rem;
-  min-width: 80%;
-  padding: 0 1rem;
-  border: 0.1rem solid #ccc;
-  background-color: gainsboro;
-}
-
-.form button[type="submit"] {
-  border: none;
-  height: 1.9rem;
-  width: 1.9rem;
-  background-color: darkgrey;
-  color: #fff;
-  margin: 0 0 0 0.5rem;
-}
-
-.tarefas {
-  margin-top: 1.5rem;
-}
-
-.tarefas li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem;
-  transition: all 400ms;
-  font-size: 17px;
-}
-
-.tarefas li:hover {
-  background-color: darkgrey;
-}
-
-.edit, .delete {
-  height: 2rem;
-  width: 2rem;
-}
-
-.tarefas li .edit {
-  margin-right: 0.4rem;
-  color: #51c5de;
-}
-
-.tarefas li .delete {
-  margin-right: 0.4rem;
-  color: #f04c64;
-}
-
-.tarefas li:hover .edit {
-  color: black;
-}
-
-.tarefas li:hover .delete {
-  color: black;
-}
-
-.tarefas li .edit,
-.tarefas li .delete {
-  cursor: pointer;
-  transition: all 400ms;
-}
-
 @media screen and (min-width:550px) {
   .main {
     padding: 2rem;
@@ -91,11 +20,4 @@
     border-radius: 0.4rem;
     box-shadow: 0 0 1rem  rgba(0, 0, 0, 1);
   }
-
-  .edit, .delete {
-    height: 1.5rem;
-    width: 1.5rem;
-  }
 }
-
-
