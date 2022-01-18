@@ -1,8 +1,9 @@
+
 .main {
   background-color:white;
-  padding: 3rem;
+  padding: 2rem 1rem;
   margin: 5rem auto;
-  max-width: 34rem;
+  max-width: 95vw;
   border-radius: 0.4rem;
   box-shadow: 0 0 1rem  rgba(0, 0, 0, 1);
 }
@@ -24,6 +25,7 @@
   min-width: 80%;
   padding: 0 1rem;
   border: 0.1rem solid #ccc;
+  background-color: gainsboro;
 }
 
 .form button[type="submit"] {
@@ -45,10 +47,16 @@
   justify-content: space-between;
   padding: 0.5rem;
   transition: all 400ms;
+  font-size: 17px;
 }
 
 .tarefas li:hover {
   background-color: darkgrey;
+}
+
+.edit, .delete {
+  height: 2rem;
+  width: 2rem;
 }
 
 .tarefas li .edit {
@@ -74,3 +82,20 @@
   cursor: pointer;
   transition: all 400ms;
 }
+
+@media screen and (min-width:550px) {
+  .main {
+    padding: 2rem;
+    margin: 5rem auto;
+    max-width: 33rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 1rem  rgba(0, 0, 0, 1);
+  }
+
+  .edit, .delete {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+
