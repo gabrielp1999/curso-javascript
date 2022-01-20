@@ -42,7 +42,7 @@ export default createGlobalStyle`
 `;
 
 export const Container = styled.section`
-  max-width: 80rem;
+  max-width: 80vw;
   background-color: #fff;
   margin: 3rem auto;
   padding: 1.5rem;

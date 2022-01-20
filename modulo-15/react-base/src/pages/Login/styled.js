@@ -7,6 +7,6 @@ export const Title = styled.h1 `
 `;
 
 export const Paragrafo = styled.p `
-  font-size: 1rem;
+  font-size: 4rem;
   color: red;
 `
