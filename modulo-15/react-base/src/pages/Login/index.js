@@ -11,6 +11,7 @@ export default function Login() {
         <small>kole</small>
       </Title>
       <Paragrafo>Loren ipsum dolor sit amet.</Paragrafo>
+      <button type='button'>Enviar</button>
     </Container>
   );
 };
