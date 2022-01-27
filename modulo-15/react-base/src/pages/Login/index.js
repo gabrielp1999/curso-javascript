@@ -1,26 +1,29 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+
 import { Container } from '../../styles/GlobalStyles';
 
 import { Title, Paragrafo } from './styled';
-import api from  '../../services/axios';
 
 export default function Login() {
-  React.useEffect( () => {
-    async function getData() {
-      const result = await api.get('/books/');
-      const { data } = result;
-      console.log(data);
-    }
 
-    getData()
-  }, []);
+  const dispatch = useDispatch();
+
+  function handleClick(e) {
+    e.preventDefault();
+
+    dispatch({
+      type: 'BOTAO_CLICADO',
+    });
+  }
+
   return (
     <Container>
       <Title isRed={true}>
         Login
       </Title>
       <Paragrafo>Loren ipsum dolor sit amet.</Paragrafo>
-      <button type='button'>Enviar</button>
+      <button type='button' onClick={handleClick}>Enviar</button>
     </Container>
   );
 };
