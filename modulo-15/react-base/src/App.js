@@ -1,24 +1,29 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+// import { Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 
-import store from './store';
-import GlobalStyles from './styles/GlobalStyles';
+import store, { persistor } from './store';
+import history from './services/history';
+import GlobalStyle from './styles/GlobalStyles';
 import Header from './components/Header';
-import Router from './routes';
+import Routes from './routes';
 
 function App() {
-  return(
+  return (
     <Provider store={store}>
-      <BrowserRouter>
-        <Header />
-        <Router />
-        <GlobalStyles />
-        <ToastContainer autoClose={3000} className="toast-container" />
-      </BrowserRouter>
+      <PersistGate persistor={persistor}>
+        <BrowserRouter history={history}>
+          <Header />
+          <Routes />
+          <GlobalStyle />
+          <ToastContainer autoClose={3000} className="toast-container" />
+        </BrowserRouter>
+      </PersistGate>
     </Provider>
-    );
+  );
 }
 
 export default App;

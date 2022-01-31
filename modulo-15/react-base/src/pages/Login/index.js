@@ -6,7 +6,6 @@ import { Title, Paragrafo } from './styled';
 import * as exampleActions from '../../store/modules/example/actions';
 
 export default function Login() {
-
   const dispatch = useDispatch();
 
   function handleClick(e) {
@@ -17,11 +16,14 @@ export default function Login() {
 
   return (
     <Container>
-      <Title isRed={true}>
+      <Title>
         Login
+        <small>Oie</small>
       </Title>
-      <Paragrafo>Loren ipsum dolor sit amet.</Paragrafo>
-      <button type='button' onClick={handleClick}>Enviar</button>
+      <Paragrafo>Lorem ipsum dolor sit amet.</Paragrafo>
+      <button type="button" onClick={handleClick}>
+        Enviar
+      </button>
     </Container>
   );
-};
+}

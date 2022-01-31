@@ -1,26 +1,23 @@
-import { call, put, all, takeLatest} from 'redux-saga/effects';
+import { call, put, all, takeLatest } from 'redux-saga/effects';
+import { toast } from 'react-toastify';
 import * as actions from './actions';
-import * as types from './types';
+import * as types from '../types';
 
-const requisicao  = () => {
-  new Promise((resolver, reject) => {
+const requisicao = () =>
+  new Promise(resolve => {
     setTimeout(() => {
-      resolver();
-    }, 2000);
+      resolve();
+    }, 700);
   });
 
-}
-  function* exampleRequest() {
-    try{
-      yield call(requisicao)
-      yield put(actions.clicaBotaoSuccess());
-    } catch{
-      yield put(actions.clicaBotaoFailure());
-    }
+function* exampleRequest() {
+  try {
+    yield call(requisicao);
+    yield put(actions.clicaBotaoSuccess());
+  } catch {
+    toast.error('Deu erro.');
+    yield put(actions.clicaBotaoFailure());
   }
+}
 
-export default all([
-  takeLatest(types.BOTAO_CLICADO_REQUEST, exampleRequest)
-]);
-
-
+export default all([takeLatest(types.BOTAO_CLICADO_REQUEST, exampleRequest)]);
